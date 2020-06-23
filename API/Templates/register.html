@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE-edge'>
+    <title>Registration</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+
+<body>
+    
+    <form action="registry" method="post">
+        {% csrf_token %}
+        <input type="text" name="user_name" placeholder="User Name"><br>
+        <input type="text" name="first_name" placeholder="First Name"><br>
+        <input type="text" name="last_name" placeholder="Last Name"><br>
+        <input type="emai" name="email_address" placeholder="Email Address"><br>
+        <input type="dateofbirth" name="date_of_birth" placeholder="Date Of Birth"><br>
+        <input type="password" name="password1" placeholder="Password"><br>
+        <input type="verifypassword" name="password2" placeholder="Verify Password"><br>
+        <button type="submit" class="btn btn-primary">Primary</button>
+        <button type="clear" class="btn btn-secondary">secondary</button>
+    </form>
+
+</body>
+</html>
